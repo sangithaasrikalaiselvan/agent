@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
-import { Download, ArrowRight } from "lucide-react";
-import profile from "@/assets/profile.jpg";
+import { Download, ArrowRight, Github, Linkedin, Mail, Phone } from "lucide-react";
+import profile from "@/assets/san.png";
 
 const roles = [
   "Agentic AI Engineer",
@@ -39,11 +38,14 @@ function useTyping() {
   return text;
 }
 
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import resume from "@/assets/resume.pdf";
+
 const socials = [
-  { icon: FaGithub, href: "https://github.com", label: "GitHub" },
-  { icon: FaLinkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: FaEnvelope, href: "mailto:sangithaa@example.com", label: "Email" },
-  { icon: FaPhone, href: "tel:+910000000000", label: "Phone" },
+  { icon: <Github size={20} />, href: "https://github.com/sangithaasrikalaiselvan", label: "GitHub" },
+  { icon: <Linkedin size={20} />, href: "https://www.linkedin.com/in/sangithaa-sri-k-6b53562ab/", label: "LinkedIn" },
+  { icon: <Mail size={20} />, href: "mailto:sangithaasrik7@gmail.com", label: "Email" },
+  { icon: <Phone size={20} />, href: "tel:+919361528364", label: "Phone" },
 ];
 
 export function Hero() {
@@ -64,7 +66,7 @@ export function Hero() {
             <div className="relative rounded-3xl overflow-hidden glow-border animate-pulse-glow w-72 sm:w-80 lg:w-96 aspect-[4/5]">
               <img
                 src={profile}
-                alt="Sangithaa Sri K"
+                alt="San"
                 width={768}
                 height={896}
                 className="w-full h-full object-cover"
@@ -103,12 +105,18 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="#"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-primary-foreground bg-gradient-to-r from-primary to-accent glow-hover glow-border"
-            >
-              <Download size={18} /> Resume
-            </a>
+            <Dialog>
+              <DialogTrigger asChild>
+                <button
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-primary-foreground bg-gradient-to-r from-primary to-accent glow-hover glow-border"
+                >
+                  Resume
+                </button>
+              </DialogTrigger>
+              <DialogContent className="max-w-4xl h-[90vh] p-0">
+                <iframe src={resume} className="w-full h-full" title="Resume" />
+              </DialogContent>
+            </Dialog>
             <a
               href="#connect"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium glass glow-hover"
@@ -117,17 +125,17 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="mt-10 flex items-center gap-4">
-            {socials.map((s) => (
+          <div className="mt-10 flex gap-3">
+            {socials.map((social, i) => (
               <a
-                key={s.label}
-                href={s.href}
+                key={i}
+                href={social.href}
                 target="_blank"
-                rel="noreferrer"
-                aria-label={s.label}
-                className="group size-12 grid place-items-center rounded-full glass glow-hover"
+                rel="noopener noreferrer"
+                aria-label={social.label}
+                className="size-11 grid place-items-center rounded-full glass glow-hover text-foreground/80"
               >
-                <s.icon className="size-5 text-foreground/80 group-hover:text-primary transition-colors" />
+                {social.icon}
               </a>
             ))}
           </div>

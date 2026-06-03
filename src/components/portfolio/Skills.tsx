@@ -1,21 +1,30 @@
 import { motion } from "framer-motion";
 import {
   SiPython, SiReact, SiTensorflow, SiNodedotjs, SiTailwindcss, SiJavascript, SiMysql,
+  SiPandas, SiNumpy, SiMongodb, SiGithub
 } from "react-icons/si";
-import { Brain, Cpu, Eye, GitBranch } from "lucide-react";
+import { Brain, Cpu, Eye, GitBranch, Bot, Share2, Sparkles, Terminal, Layers, BrainCircuit, Database, Code2 } from "lucide-react";
 
 const skills = [
   { name: "Python", icon: SiPython, color: "#3b82f6" },
   { name: "React", icon: SiReact, color: "#22d3ee" },
   { name: "Machine Learning", icon: Brain, color: "#818cf8" },
   { name: "Deep Learning", icon: Cpu, color: "#a78bfa" },
-  { name: "Computer Vision", icon: Eye, color: "#38bdf8" },
   { name: "Node.js", icon: SiNodedotjs, color: "#4ade80" },
-  { name: "Tailwind CSS", icon: SiTailwindcss, color: "#22d3ee" },
   { name: "SQL", icon: SiMysql, color: "#60a5fa" },
   { name: "JavaScript", icon: SiJavascript, color: "#facc15" },
   { name: "TensorFlow", icon: SiTensorflow, color: "#fb923c" },
   { name: "Git", icon: GitBranch, color: "#f472b6" },
+  { name: "Java", icon: Code2, color: "#f89820" },
+  { name: "Agentic AI", icon: Bot, color: "#10b981" },
+  { name: "LangGraph", icon: Share2, color: "#a855f7" },
+  { name: "Generative AI", icon: Sparkles, color: "#fbbf24" },
+  { name: "Prompt Engineering", icon: Terminal, color: "#4ade80" },
+  { name: "RAG", icon: Layers, color: "#38bdf8" },
+  { name: "LLMs", icon: BrainCircuit, color: "#ec4899" },
+  { name: "Data Science", icon: Database, color: "#6366f1" },
+  { name: "MongoDB", icon: SiMongodb, color: "#47a248" },
+  { name: "GitHub", icon: SiGithub, color: "#ffffff" },
 ];
 
 export function Skills() {

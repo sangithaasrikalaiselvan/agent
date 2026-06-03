@@ -5,8 +5,10 @@ import { Menu, X } from "lucide-react";
 const links = [
   { label: "Certifications", href: "#certifications" },
   { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
   { label: "Hackathons", href: "#hackathons" },
   { label: "Achievements", href: "#achievements" },
+  { label: "Conferences", href: "#conferences" },
   { label: "Skills", href: "#skills" },
   { label: "Connect", href: "#connect" },
 ];
@@ -33,7 +35,7 @@ export function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
         <a href="#home" className="font-display font-bold tracking-widest text-sm">
-          SANGITHAA<span className="text-gradient"> . SRI</span>
+          SAN
         </a>
 
         <ul className="hidden lg:flex items-center gap-8">
