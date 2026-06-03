@@ -16,16 +16,16 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import AIConepts from "@/assets/AI Concepts.png";
-import Backend from "@/assets/Backend.png";
+import AIConepts from "@/assets/ai-concepts.png";
+import Backend from "@/assets/backend.png";
 import Cpp from "@/assets/c++.png";
-import CloudComputing from "@/assets/Cloud Computing.png";
-import DescribeCloudComputing from "@/assets/Describe Cloud Computing.png";
-import DesignThinking from "@/assets/Design Thinking - A Primer.png";
+import CloudComputing from "@/assets/cloud-computing.png";
+import DescribeCloudComputing from "@/assets/describe-cloud-computinng.png";
+import DesignThinking from "@/assets/design-thinking-a-premier.png";
 import GIS from "@/assets/gis.png";
-import MongoDB from "@/assets/Introduction To MongDB.png";
-import Oracle from "@/assets/Oracle.png";
-import PythonForDataScience from "@/assets/Python for Data Science.png";
+import MongoDB from "@/assets/introduction-to-mongo-db.png";
+import Oracle from "@/assets/oracle.png";
+import PythonForDataScience from "@/assets/python-for-data-science.png";
 import cognizant from "@/assets/cognizant.png";
 
 export const Route = createFileRoute("/")({
