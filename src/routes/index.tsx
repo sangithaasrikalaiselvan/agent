@@ -17,7 +17,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import AIConepts from "@/assets/ai-concepts.png";
-import Backend from "@/assets/backend.png";
+import Backend from "@/assets/backend-temp.png";
 import Cpp from "@/assets/c++.png";
 import CloudComputing from "@/assets/cloud-computing.png";
 import DescribeCloudComputing from "@/assets/describe-cloud-computinng.png";
