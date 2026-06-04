@@ -2,5 +2,10 @@
   "name": "agent",
   "compatibility_date": "2026-05-26",
   "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "VITE_EMAILJS_PUBLIC_KEY": "sEe9TBYsjqzoAhra9",
+    "VITE_EMAILJS_SERVICE_ID": "service_f8afu3o",
+    "VITE_EMAILJS_TEMPLATE_ID": "template_95i7vnl"
+  },
   "observability": { "enabled": true }
 }
