@@ -2,8 +2,7 @@
   "name": "agent",
   "compatibility_date": "2026-05-26",
   "assets": {
-    "directory": "./dist/client",
-    "binding": "ASSETS"
+    "directory": "."
   },
   "observability": { "enabled": true }
 }
