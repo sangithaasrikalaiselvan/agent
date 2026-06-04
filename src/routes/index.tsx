@@ -24,7 +24,7 @@ import DescribeCloudComputing from "@/assets/describe-cloud-computinng.png";
 import DesignThinking from "@/assets/design-thinking-a-premier.png";
 import GIS from "@/assets/gis.png";
 import MongoDB from "@/assets/introduction-to-mongo-db.png";
-import Oracle from "@/assets/oracle.png";
+import Oracle from "@/assets/Oracle.png";
 import PythonForDataScience from "@/assets/python-for-data-science.png";
 import cognizant from "@/assets/cognizant.png";
 
