@@ -280,6 +280,7 @@ const achievements = [
 ];
 
 function Index() {
+  console.log("DEPLOYMENT TEST 999");
   return (
     <div className="relative min-h-screen">
       <Background />
